@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney+ Hotstar-watch TV shows,Movies, Live Cricket Matches &...</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/lightslider.css">
+    <script src="./js/JQuery3.3.1.js"></script>
+    <script src="./js/lightslider.js"></script>
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="./assets/images/fac-icon.webp">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <!-- bootstrap liberary -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<style>
+    .dropdown-toggle::after{
+  display:none;
+}
+
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img class="brand-logo" src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg" alt="Disney+&nbsp;Hotstar">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  TV
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Hotstar Specials</a>
+                  <a class="dropdown-item" href="#">StarPlus</a>
+                  <a class="dropdown-item" href="#">Star Jalsha</a>
+                  <a class="dropdown-item" href="#">Star Vijay</a>
+                  <a class="dropdown-item" href="#">Star Bharat</a>
+                  <a class="dropdown-item" href="#">Life Ok</a>
+                  <a class="dropdown-item" href="#">Asianet</a>
+                  <a class="dropdown-item" href="#">Star Maa</a>
+                  <a class="dropdown-item" href="#">More... </a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Movies
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Hindi</a>
+                  <a class="dropdown-item" href="#">Bengali</a>
+                  <a class="dropdown-item" href="#">Telugu</a>
+                  <a class="dropdown-item" href="#">Malayalam</a>
+                  <a class="dropdown-item" href="#">Tamil</a>
+                  <a class="dropdown-item" href="#">Marathi</a>
+                  <a class="dropdown-item" href="#">English</a>
+                  <a class="dropdown-item" href="#">Kannada</a> 
+                </div>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sports
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Cricket</a>
+                <a class="dropdown-item" href="#">Football</a>
+                <a class="dropdown-item" href="#">Formula 1</a>
+                <a class="dropdown-item" href="#">eSports</a>
+                <a class="dropdown-item" href="#">Martial Arts</a>
+                <a class="dropdown-item" href="#">Tennis</a>
+                <a class="dropdown-item" href="#">Hockey</a>
+                <a class="dropdown-item" href="#">Golf</a>
+                <a class="dropdown-item" href="#">Badminton</a>
+                <a class="dropdown-item" href="#">Wrestling</a>
+                <a class="dropdown-item" href="#">Kabaddi</a>
+                <a class="dropdown-item" href="#">Table Tennis</a>
+                <a class="dropdown-item" href="#">Khelo India</a>
+                <a class="dropdown-item" href="#">Athletics</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  News
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Premium
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Disney+</a>
+                <span class="newsub">NEW</span>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                    <img src="./assets/images/kids.svg" alt="Kids">
+                </a>
+              </li>
+           </ul>
+          <form class="form-inline">
+                <i class="fas fa-search" aria-hidden="true"></i>
+                <input class="form-control form-control-md ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+              </form>
+           <div class="subscribe">
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+          </div>
+            <div class="login">
+            <label for="login" style="cursor: pointer;">LOGIN</label>
+         </div>
+        </div>
+      </nav>
+      <div class="wrap">
+        <div class="container-slider-video">
+            <div id="video-slider" class="carousel slider" data-ride="carousel" data-interval="10000">
+              <ol class="carousel-indicators">
+                  <li data-target="video-slider" data-slide-to="0" class="active"></li>
+                  <li data-target="video-slider" data-slide-to="1"></li>
+                  <li data-target="video-slider" data-slide-to="2"></li>
+                  <li data-target="video-slider" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <video id="videoSL" loop muted autoplay>
+                      <source src="./assets/images/The Lion King Official Trailer.mp4" type="video/webm">
+                      </video>
+                      <div class="container-fluid content-video">
+                          <div class="row">
+                              <div class="offset-md-2 col-md-6 content" id="brief">
+                                <h2>The Lion King</h2>
+                                <span class="sinleline">2 hr . 2020 . family . PG</span>
+                                <p>In the African savanna, a young prince overcomes betrayal and tragedy to 
+                                  assume his rightful place on Pride Rock.
+                                </p>
+                                  
+                                      
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <video id="videoSL" loop muted autoplay>
+                      <source src="./assets/images/Hostages - Official Trailer.mp4" type="video/webm">
+                      </video>
+                      <div class="container-fluid content-video">
+                          <div class="row">
+                              <div class="offset-md-2 col-md-6 content" id="brief">
+                                  <h2>Hostages</h2>
+                                  <span class="sinleline">2 Season. 22 Episodes . Thriller . 15+ . Hotstar Specials</span>
+                                  <p>Reneging on the deal to kill the CM, Prithvi plans to smuggle him to Nepal 
+                                    but ends up in a Hostage crisis again. Amid threads old and new, a conspiracy unfolds.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <video id="videoSL" loop muted autoplay>
+                      <source src="./assets/images/My Name Is Sara - trailer.mp4" type="video/webm">
+                      </video>
+                      <div class="container-fluid content-video">
+                          <div class="row">
+                              <div class="offset-md-2 col-md-6 content" id="brief">
+                                  <h2>My name is Sara</h2>
+                                  <span class="sinleline">Celebrities . PG . English . Stars on Hotstar</span>
+                                  <p>Everyone wants to feel good inside out. Check out Sara for all the tips and tricks you need to 
+                                    keep your mind, body and soul feeling good.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <video id="videoSL" loop muted autoplay>
+                      <source src="./assets/images/Hotstar Specials Presents Aarya _ Official Trailer _ Ram Madhvani _ Sushmita Sen.mp4" type="video/webm">
+                      </video>
+                      <div class="container-fluid content-video">
+                          <div class="row">
+                              <div class="offset-md-2 col-md-6 content" id="brief">
+                                <h2>Aarya</h2>
+                                <span class="sinleline">1 Season. 9 Episodes . Drama . 15+ . Hotstar Specials</span>
+                                <p>Aarya Sareen's blissful family life is jeopardised when greed consumes
+                                  her loved ones. With crime as her legacy, can she escape from what she hates the most?
+                                </p>
+                               </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <a href="#video-slider" role="button" data-slide="prev" class="carousel-control-prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true "></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a href="#video-slider" role="button" data-slide="next" class="carousel-control-next">
+                  <span class="carousel-control-next-icon" aria-hidden="true "></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      </div>
+    </div>
+    <!-- Specials & Latest Movies -->
+    <section id="latest">
+      <h2 class="latest-heading" style="color: white;">Specials & Latest Movies</h2>
+      <!-- sliders -->
+     <ul id="autoWidth" class="cs-hidden">
+        <!-- slide-box-1 -->
+        <li class="item-a">
+          <div class="latest-box">
+            <!-- img -->
+            <div class="latest-b-img">
+              <img src="./assets/images/m-1.jpg" alt="latest movie">
+            </div>
+            <!-- text -->
+            <div class="latest-b-text">
+              <strong>Kin 2018</strong>
+              <p>Action movie</p>
+            </div>
+          </div>
+        </li>
+         <!-- slide-box-2 -->
+        <li class="item-b">
+          <div class="latest-box">
+            <!-- img -->
+            <div class="latest-b-img">
+              <img src="./assets/images/m-2.jpg" alt="latest movie">
+            </div>
+            <!-- text -->
+            <div class="latest-b-text">
+              <strong>Peninsula</strong>
+              <p>Action movie</p>
+            </div>
+          </div>
+        </li>
+         <!-- slide-box-3 -->
+        <li class="item-c">
+          <div class="latest-box">
+            <!-- img -->
+            <div class="latest-b-img">
+              <img src="./assets/images/m-3.jpg" alt="latest movie">
+            </div>
+            <!-- text -->
+            <div class="latest-b-text">
+              <strong>Inception</strong>
+              <p>Action movie</p>
+            </div>
+          </div>
+        </li>
+         <!-- slide-box-4 -->
+        <li class="item-d">
+          <div class="latest-box">
+            <!-- img -->
+            <div class="latest-b-img">
+              <img src="./assets/images/m-4.jpg" alt="latest movie">
+            </div>
+            <!-- text -->
+            <div class="latest-b-text">
+              <strong>Iron Man 3</strong>
+              <p>Action movie</p>
+            </div>
+          </div>
+        </li>
+         <!-- slide-box-5 -->
+        <li class="item-e">
+          <div class="latest-box">
+            <!-- img -->
+            <div class="latest-b-img">
+              <img src="./assets/images/m-5.jpg" alt="latest movie">
+            </div>
+            <!-- text -->
+            <div class="latest-b-text">
+              <strong>Venum</strong>
+              <p>Action movie</p>
+            </div>
+          </div>
+        </li>
+         <!-- slide-box-6 -->
+         <li class="item-f">
+          <div class="latest-box">
+            <!-- img -->
+            <div class="latest-b-img">
+              <img src="./assets/images/m-6.jpg" alt="latest movie">
+            </div>
+            <!-- text -->
+            <div class="latest-b-text">
+              <strong>Aqua Man</strong>
+              <p>Action movie</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+     </section>
+ <!-- Shows Recommended For You -->
+ <section id="latest">
+  <h2 class="latest-heading" style="color: white;">Shows Recommended For You</h2>
+  <!-- sliders -->
+ <ul id="autoWidth" class="cs-hidden">
+    <!-- slide-box-1 -->
+    <li class="item-a">
+      <div class="latest-box">
+        <!-- img -->
+        <div class="latest-b-img">
+          <img src="./assets/images/m-5.jpg" alt="latest movie">
+        </div>
+        <!-- text -->
+        <div class="latest-b-text">
+          <strong>Kin 2018</strong>
+          <p>Action movie</p>
+        </div>
+      </div>
+    </li>
+     <!-- slide-box-2 -->
+    <li class="item-b">
+      <div class="latest-box">
+        <!-- img -->
+        <div class="latest-b-img">
+          <img src="./assets/images/m-6.jpg" alt="latest movie">
+        </div>
+        <!-- text -->
+        <div class="latest-b-text">
+          <strong>Peninsula</strong>
+          <p>Action movie</p>
+        </div>
+      </div>
+    </li>
+     <!-- slide-box-3 -->
+    <li class="item-c">
+      <div class="latest-box">
+        <!-- img -->
+        <div class="latest-b-img">
+          <img src="./assets/images/m-5.jpg" alt="latest movie">
+        </div>
+        <!-- text -->
+        <div class="latest-b-text">
+          <strong>Inception</strong>
+          <p>Action movie</p>
+        </div>
+      </div>
+    </li>
+     <!-- slide-box-4 -->
+    <li class="item-d">
+      <div class="latest-box">
+        <!-- img -->
+        <div class="latest-b-img">
+          <img src="./assets/images/m-4.jpg" alt="latest movie">
+        </div>
+        <!-- text -->
+        <div class="latest-b-text">
+          <strong>Iron Man 3</strong>
+          <p>Action movie</p>
+        </div>
+      </div>
+    </li>
+     <!-- slide-box-5 -->
+    <li class="item-e">
+      <div class="latest-box">
+        <!-- img -->
+        <div class="latest-b-img">
+          <img src="./assets/images/m-3.jpg" alt="latest movie">
+        </div>
+        <!-- text -->
+        <div class="latest-b-text">
+          <strong>Venum</strong>
+          <p>Action movie</p>
+        </div>
+      </div>
+    </li>
+     <!-- slide-box-6 -->
+     <li class="item-f">
+      <div class="latest-box">
+        <!-- img -->
+        <div class="latest-b-img">
+          <img src="./assets/images/m-2.jpg" alt="latest movie">
+        </div>
+        <!-- text -->
+        <div class="latest-b-text">
+          <strong>Aqua Man</strong>
+          <p>Action movie</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+ </section>
+ <!-- Popular Movies -->
+ <section id="latest">
+  <h2 class="latest-heading" style="color: white;">Popular Movies</h2>
+  <!-- sliders -->
+ <ul id="autoWidth" class="cs-hidden">
+    <!-- slide-box-1 -->
+    <li class="item-a">
+      <div class="latest-box">
+        <!-- img -->
+        <div class="latest-b-img">
+          <img src="./assets/images/m-1.jpg" alt="latest movie">
+        </div>
+        <!-- text -->
+        <div class="latest-b-text">
+          <strong>Kin 2018</strong>
+          <p>Action movie</p>
+        </div>
+      </div>
+    </li>
+     <!-- slide-box-2 -->
+    <li class="item-b">
+      <div class="latest-box">
+        <!-- img -->
+        <div class="latest-b-img">
+          <img src="./assets/images/m-2.jpg" alt="latest movie">
+        </div>
+        <!-- text -->
+        <div class="latest-b-text">
+          <strong>Peninsula</strong>
+          <p>Action movie</p>
+        </div>
+      </div>
+    </li>
+     <!-- slide-box-3 -->
+    <li class="item-c">
+      <div class="latest-box">
+        <!-- img -->
+        <div class="latest-b-img">
+          <img src="./assets/images/m-3.jpg" alt="latest movie">
+        </div>
+        <!-- text -->
+        <div class="latest-b-text">
+          <strong>Inception</strong>
+          <p>Action movie</p>
+        </div>
+      </div>
+    </li>
+     <!-- slide-box-4 -->
+    <li class="item-d">
+      <div class="latest-box">
+        <!-- img -->
+        <div class="latest-b-img">
+          <img src="./assets/images/m-4.jpg" alt="latest movie">
+        </div>
+        <!-- text -->
+        <div class="latest-b-text">
+          <strong>Iron Man 3</strong>
+          <p>Action movie</p>
+        </div>
+      </div>
+    </li>
+     <!-- slide-box-5 -->
+    <li class="item-e">
+      <div class="latest-box">
+        <!-- img -->
+        <div class="latest-b-img">
+          <img src="./assets/images/m-5.jpg" alt="latest movie">
+        </div>
+        <!-- text -->
+        <div class="latest-b-text">
+          <strong>Venum</strong>
+          <p>Action movie</p>
+        </div>
+      </div>
+    </li>
+     <!-- slide-box-6 -->
+     <li class="item-f">
+      <div class="latest-box">
+        <!-- img -->
+        <div class="latest-b-img">
+          <img src="./assets/images/m-6.jpg" alt="latest movie">
+        </div>
+        <!-- text -->
+        <div class="latest-b-text">
+          <strong>Aqua Man</strong>
+          <p>Action movie</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+ </section>
+ <!-- movies -->
+ <div class="movies-heading">
+   <h2 style="color: white;">Movies</h2>
+ </div>
+ <section id="movies-list">
+<!-- box-1 -->
+<div class="movies-box">
+  <!-- img -->
+  <div class="movies-img">
+    <img src="./assets/images/l-1.jpg" alt="movie">
+  </div>
+<!-- text -->
+<a href="#" id="aboutMovie">
+  Tin (2020) Full Movie[In English] with English Subtitles | HDRip 1080 HD
+</a>
+</div>
+<!-- box-2 -->
+<div class="movies-box">
+  <!-- img -->
+  <div class="movies-img">
+    <img src="./assets/images/l-2.jpg" alt="movie">
+  </div>
+<!-- text -->
+<a href="#" id="aboutMovie">
+  Tin (2020) Full Movie[In English] with English Subtitles | HDRip 1080 HD
+</a>
+</div>
+<!-- box-3 -->
+<div class="movies-box">
+  <!-- img -->
+  <div class="movies-img">
+    <img src="./assets/images/l-3.jpg" alt="movie">
+  </div>
+<!-- text -->
+<a href="#" id="aboutMovie">
+  Tin (2020) Full Movie[In English] with English Subtitles | HDRip 1080 HD
+</a>
+</div>
+<!-- box-4 -->
+<div class="movies-box">
+  <!-- img -->
+  <div class="movies-img">
+    <img src="./assets/images/l-4.jpg" alt="movie">
+  </div>
+<!-- text -->
+<a href="#" id="aboutMovie">
+  Tin (2020) Full Movie[In English] with English Subtitles | HDRip 1080 HD
+</a>
+</div>
+<!-- box-5 -->
+<div class="movies-box">
+  <!-- img -->
+  <div class="movies-img">
+    <img src="./assets/images/l-5.jpg" alt="movie">
+  </div>
+<!-- text -->
+<a href="#" id="aboutMovie">
+  Tin (2020) Full Movie[In English] with English Subtitles | HDRip 1080 HD
+</a>
+</div>
+<!-- box-6 -->
+<div class="movies-box">
+  <!-- img -->
+  <div class="movies-img">
+    <img src="./assets/images/l-6.jpg" alt="movie">
+  </div>
+<!-- text -->
+<a href="#" id="aboutMovie">
+  Tin (2020) Full Movie[In English] with English Subtitles | HDRip 1080 HD
+</a>
+</div>
+ </section>
+ <footer class="bg-dark text-center text-lg-start">
+<div class="text-center p-3" style="background-color:#141b29; color: #ffffff;">
+    Copyright © 2020 
+    <a class="text-dark" href="https://www.hotstar.com/in" style="color: #ffffff !important;">Disney + Hotstar</a>
+  </div>
+</footer>
+   <script src="./js/script.js"></script> 
+</body>
+</html>
